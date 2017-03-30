@@ -27,7 +27,7 @@ public class DisplayController {
 				String a = display.getFieldAText();
 				String b = display.getFieldBText();
 
-				Result result = LongMath.bigLongMultiply(a, b);
+				Result result = LongMath.longMultiply(a, b);
 
 				display.setTableModel(new MathTableModel(result.getTable()));
 				display.setTotalLabel(result.getTotal());

@@ -1,4 +1,5 @@
 package com.longmath;
+
 import javax.swing.SwingUtilities;
 
 import com.longmath.controller.DisplayController;
@@ -27,7 +28,6 @@ public class Application {
 
 	public static void main(String[] args) {
 		new Application().start();
-
 	}
 
 }

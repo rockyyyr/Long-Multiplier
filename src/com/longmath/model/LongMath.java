@@ -5,20 +5,7 @@ import java.math.BigInteger;
 
 public class LongMath {
 
-	// public static Result longMultiply(long a, long num2) {
-	// long[] b = longToArrayOfDigits(num2);
-	// long[] steps = new long[b.length];
-	//
-	// for (int i = b.length - 1; i >= 0; i--) {
-	// int index = (b.length - 1) - i;
-	// long multiple = (long) (b[i] * Math.pow(10, index));
-	//
-	// steps[index] = multiple * a;
-	// }
-	// return new Result(steps, a, num2);
-	// }
-
-	public static Result bigLongMultiply(String a, String num2) {
+	public static Result longMultiply(String a, String num2) {
 		String[] b = stringToStringArray(num2);
 		BigInteger[] steps = new BigInteger[b.length];
 
