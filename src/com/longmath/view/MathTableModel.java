@@ -1,6 +1,7 @@
 
 package com.longmath.view;
 
+import java.math.BigInteger;
 import java.text.NumberFormat;
 
 import javax.swing.event.TableModelListener;
@@ -12,11 +13,11 @@ public class MathTableModel implements TableModel {
 
 	private String[] table;
 
-	public MathTableModel(long[] table) {
+	public MathTableModel(BigInteger[] table) {
 		this.table = formatTableArray(table);
 	}
 
-	private String[] formatTableArray(long[] table) {
+	private String[] formatTableArray(BigInteger[] table) {
 		String[] temp = new String[table.length];
 		for (int i = 0; i < table.length; i++) {
 			temp[i] = NumberFormat.getInstance().format(table[i]);

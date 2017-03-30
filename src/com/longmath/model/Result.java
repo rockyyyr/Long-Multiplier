@@ -1,27 +1,28 @@
 package com.longmath.model;
 
+import java.math.BigInteger;
 import java.text.NumberFormat;
 
 public class Result {
 
-	private long[] table;
-	private long a;
-	private long b;
-	private long total;
+	private BigInteger[] table;
+	private BigInteger a;
+	private BigInteger b;
+	private BigInteger total;
 
 	/**
 	 * @param table
 	 * @param a
 	 * @param b
 	 */
-	public Result(long[] table, long a, long b) {
+	public Result(BigInteger[] table, String a, String b) {
 		this.table = table;
-		this.a = a;
-		this.b = b;
-		this.total = a * b;
+		this.a = new BigInteger(a);
+		this.b = new BigInteger(b);
+		this.total = this.a.multiply(this.b);
 	}
 
-	public long[] getTable() {
+	public BigInteger[] getTable() {
 		return table;
 	}
 

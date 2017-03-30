@@ -24,10 +24,10 @@ public class DisplayController {
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				long a = Long.valueOf(display.getFieldAText());
-				long b = Long.valueOf(display.getFieldBText());
+				String a = display.getFieldAText();
+				String b = display.getFieldBText();
 
-				Result result = LongMath.longMultiply(a, b);
+				Result result = LongMath.bigLongMultiply(a, b);
 
 				display.setTableModel(new MathTableModel(result.getTable()));
 				display.setTotalLabel(result.getTotal());
