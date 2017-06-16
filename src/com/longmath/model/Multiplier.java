@@ -3,7 +3,7 @@ package com.longmath.model;
 
 import java.math.BigInteger;
 
-public class LongMath {
+public class Multiplier {
 
 	public static Result longMultiply(String a, String num2) {
 		String[] b = stringToStringArray(num2);

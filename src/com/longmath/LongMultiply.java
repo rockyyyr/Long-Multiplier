@@ -5,7 +5,7 @@ import javax.swing.SwingUtilities;
 import com.longmath.controller.DisplayController;
 import com.longmath.view.Display;
 
-public class Application {
+public class LongMultiply {
 
 	private DisplayController controller;
 
@@ -27,7 +27,7 @@ public class Application {
 	}
 
 	public static void main(String[] args) {
-		new Application().start();
+		new LongMultiply().start();
 	}
 
 }
