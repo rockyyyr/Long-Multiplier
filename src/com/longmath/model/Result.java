@@ -10,11 +10,6 @@ public class Result {
 	private BigInteger b;
 	private BigInteger total;
 
-	/**
-	 * @param table
-	 * @param a
-	 * @param b
-	 */
 	public Result(BigInteger[] table, String a, String b) {
 		this.table = table;
 		this.a = new BigInteger(a);
